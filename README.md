@@ -11,7 +11,7 @@
 		~/.aws/credentials
 	+ Windows
 		C:\Users\USERNAME \.aws\credentials
-##### - Set the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables:
+##### Set the AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY environment variables:
 	+ Unix or Linux: 
 		export AWS_ACCESS_KEY_ID=your_access_key_id
 		export AWS_SECRET_ACCESS_KEY=your_secret_access_key
