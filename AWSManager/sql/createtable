@@ -1,0 +1,36 @@
+drop table IF EXISTS Request;
+create table IF NOT EXISTS Request(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Requester NVARCHAR(100) NOT NULL ,
+  ModelName nvarchar(100) NOT NULL ,
+  DownloadUrl NVARCHAR(10000),
+  Worker int NOT NULL ,
+  Ps int NOT NULL ,
+  Status NVARCHAR(100) NOT NULL ,
+  ExecutionTime float,
+  Accuracy float
+);
+
+drop TABLE IF EXISTS Setting;
+create TABLE IF NOT EXISTS Setting(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Name NVARCHAR(100) UNIQUE NOT NULL,
+  Value NVARCHAR(10000) NOT NULL
+);
+
+drop TABLE IF EXISTS Instance;
+CREATE TABLE IF NOT EXISTS Instance(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  InstanceId NVARCHAR(100) NOT NULL,
+  InstanceIPAddress NVARCHAR(100) NOT NULL,
+  RequestId INT NOT NULL
+);
+
+drop TABLE IF EXISTS Command;
+CREATE TABLE IF NOT EXISTS Command(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  InstanceId NVARCHAR(100) NOT NULL,
+  CommandId NVARCHAR(1000) NOT NULL,
+  CommandStatus NVARCHAR(100),
+  TrainingCommand BOOLEAN
+);

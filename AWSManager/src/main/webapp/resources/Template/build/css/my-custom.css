@@ -1,0 +1,9 @@
+.ace_editor {
+    width:100%;
+    height:300px;
+}
+.readonly-highlight{
+    background-color: purple;
+    opacity: 0.2;
+    position: absolute;
+}
