@@ -1,7 +1,7 @@
 # Mobile Distributed Machine Learning Auto Deployment System
-	This is the implementation of Distributed Machine Learning Auto Deployment System.
-	The distributed machine learning training is executed on the Amazon Web Service EC2 instances (some of them will be parameter servers and some of the will be the workers).
-	The Model Serving Service which handle the user request to predict a specific test image on a specified trained model.
+This is the implementation of Distributed Machine Learning Auto Deployment System.
+The distributed machine learning training is executed on the Amazon Web Service EC2 instances (some of them will be parameter servers and some of the will be the workers).
+The Model Serving Service which handle the user request to predict a specific test image on a specified trained model.
 
 ## I - Setting Up
 ### A - Training Server
